@@ -1,5 +1,5 @@
 
-# Overview
+## Overview
 
 This is a "dockerized" version of a simple working laravel project.
 
@@ -43,10 +43,12 @@ Or, you can build and run these containers separately:
     docker-compose up -d app
     docker-compose up -d web
 
+Note that the `php artisan migrate` command needs access to database and so run once only the app is fully up and running.
+
 
 ## See the Result
 
-Visit `http://localhost/` or `http://host.ip.addr/` to view a Task List application.
+Visit `http://localhost/` or `http://your.host.ip.addr/` to view a Task List application.
 
 
 ## Stopping
