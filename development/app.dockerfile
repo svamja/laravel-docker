@@ -30,5 +30,7 @@ RUN  apt-get install -y libmcrypt-dev \
 
 RUN mv .env.prod .env
 
+RUN php artisan migrate
+
 RUN php artisan optimize
 
